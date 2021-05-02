@@ -85,7 +85,7 @@ function draw() {
   //displaying score
   text("Score: "+ score, camera.x+500,50);
   trex.velocityX = 0; 
-  text("Note : "+ note,camera.x+200,50);
+  text("Note : "+ note,camera.x+100,10);
   
   console.log("this is ",gameState)
   
