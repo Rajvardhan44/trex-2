@@ -12,6 +12,7 @@ var score;
 
 var gameOver,gameOverImage, Restart,RestartImage;
 
+var note;
 
 function preload(){
   trex_running = loadAnimation("trex1.png","trex3.png","trex4.png");
@@ -76,6 +77,7 @@ function setup() {
   trex.debug = false;
   
   score = 0
+  note = "Press right arrow to speed up and left to slow down and space to jump."
 }
 
 function draw() {
@@ -83,6 +85,7 @@ function draw() {
   //displaying score
   text("Score: "+ score, camera.x+500,50);
   trex.velocityX = 0; 
+  text("Note : "+ note,camera.x+200,50
   
   console.log("this is ",gameState)
   
